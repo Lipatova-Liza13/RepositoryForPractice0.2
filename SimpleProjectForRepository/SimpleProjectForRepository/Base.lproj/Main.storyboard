@@ -29,6 +29,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQa-FK-Qvo">
                                         <rect key="frame" x="20" y="208" width="132" height="130"/>
                                         <state key="normal" title="Button" image="button"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tEd-P1-Xx2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -57,7 +60,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="button" destination="MQa-FK-Qvo" id="hoM-Un-4R9"/>
                         <outlet property="label" destination="gw1-g2-5Ut" id="J93-GI-Dfi"/>
                     </connections>
                 </viewController>
