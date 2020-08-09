@@ -15,22 +15,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQa-FK-Qvo">
-                                <rect key="frame" x="141" y="392" width="132" height="113"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gw1-g2-5Ut">
-                                <rect key="frame" x="180" y="197" width="55" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.45393496751785278" green="0.90925902128219604" blue="0.68839651346206665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWN-CR-QWn">
+                                <rect key="frame" x="121" y="177" width="172" height="348"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gw1-g2-5Ut">
+                                        <rect key="frame" x="20" y="30" width="132" height="18"/>
+                                        <color key="backgroundColor" red="0.45393496751785278" green="0.90925902128219604" blue="0.68839651346206665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQa-FK-Qvo">
+                                        <rect key="frame" x="20" y="208" width="132" height="130"/>
+                                        <state key="normal" title="Button" image="button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gw1-g2-5Ut" secondAttribute="bottom" constant="300" id="5L0-PW-HFx"/>
+                                    <constraint firstAttribute="trailing" secondItem="gw1-g2-5Ut" secondAttribute="trailing" constant="20" id="8Ez-hv-pSl"/>
+                                    <constraint firstItem="gw1-g2-5Ut" firstAttribute="top" secondItem="MWN-CR-QWn" secondAttribute="top" constant="30" id="Dja-Ld-EC1"/>
+                                    <constraint firstItem="MQa-FK-Qvo" firstAttribute="leading" secondItem="MWN-CR-QWn" secondAttribute="leading" constant="20" id="GAd-kd-GJA"/>
+                                    <constraint firstItem="gw1-g2-5Ut" firstAttribute="leading" secondItem="MWN-CR-QWn" secondAttribute="leading" constant="20" id="J1R-Uu-Uyr"/>
+                                    <constraint firstAttribute="trailing" secondItem="MQa-FK-Qvo" secondAttribute="trailing" constant="20" id="ZG6-eb-jzC"/>
+                                    <constraint firstItem="MQa-FK-Qvo" firstAttribute="leading" secondItem="MWN-CR-QWn" secondAttribute="leading" constant="20" id="aec-OM-gja"/>
+                                    <constraint firstItem="MQa-FK-Qvo" firstAttribute="top" secondItem="gw1-g2-5Ut" secondAttribute="bottom" constant="160" id="cm4-2I-1aa"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MQa-FK-Qvo" secondAttribute="trailing" constant="20" symbolic="YES" id="dKD-tx-MO1"/>
+                                    <constraint firstAttribute="bottom" secondItem="MQa-FK-Qvo" secondAttribute="bottom" constant="10" id="jft-YL-Gkz"/>
+                                    <constraint firstItem="MQa-FK-Qvo" firstAttribute="top" secondItem="gw1-g2-5Ut" secondAttribute="bottom" constant="160" id="rPb-Kw-hse"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MWN-CR-QWn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="133" id="9Hg-1H-tFM"/>
+                            <constraint firstItem="MWN-CR-QWn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="101" id="KA2-Yh-6gE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="MWN-CR-QWn" secondAttribute="bottom" constant="337" id="bTF-6X-Dpu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MWN-CR-QWn" secondAttribute="trailing" constant="101" id="uLY-xC-UrW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
